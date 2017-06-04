@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>App Summertour</title>
+    <link rel="stylesheet" href="themes/AppSummertour.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="Scripts/Config.js" type="text/javascript"></script>
+    <script src="Scripts/JStornei.js" type="text/javascript"></script>
+</head>
+<body>
+    <div data-role="page" id="landing" data-theme="a">
+		<div data-role="header" data-position="inline">
+			<h1>Summertour 2017</h1>
+		</div>
+        <div>&nbsp;</div>
+		<div>            
+            <ul data-role="listview" data-inset="true" id="elencoTornei">
+                    
+            </ul>           
+        </div>       
+    </div>
+
+    <div data-role="page" id="dettTorneo" data-theme="a">
+		<div data-role="header" data-position="inline">
+            <a href="index.html" data-icon="arrow-l" class="ui-btn-left" data-rel="back">Back</a>
+			<h1>Summertour 2017</h1>
+            <h1 id="TorneoScelto"></h1>
+		</div>
+        <div>&nbsp;</div>
+		<div>            
+              <div class="ui-field-contain">
+                  <label for="categorieTorneo">Scegli la categoria</label>
+                  <select name="categorieTorneo" id="categorieTorneo" data-native-menu="false">
+                      <option value="value">text1</option>
+                      <option value="value">text2</option>
+                  </select>
+              </div>
+            <div id="DescCategoriaTorneo"></div>
+            <div id="DescPagamentoCategoria"></div>
+            <div>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow">Iscriviti</a>
+            </div>
+            <div>
+                <ul data-role="listview" data-inset="true" data-shadow="false">
+                    <li data-role="collapsible" data-iconpos="right" data-inset="false">
+                        <h2>Squadra 1</h2>
+                        <ul data-role="listview">
+                            <li>Giocatore 1</li>
+                            <li>Giocatore 2</li>
+                            <li>Giocatore 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </div>
+</body>
+</html>
